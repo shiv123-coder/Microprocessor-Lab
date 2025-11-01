@@ -2,24 +2,24 @@
 
 **Institute:** Jayawant Shikshan Prasarak Mandal  
 **Author / Student:** Shivshankar Mali  
-**Subject:** Microprocessor Laboratory (MPL)  
-**Academic Year:** 2024 – 2025
+**Subject:** Microprocessor Laboratory (MPL) – *Assembly Language Programming using NASM*  
+**Academic Year:** 2024 – 2025  
 
 ---
 
 ## 📘 Overview
 
-This repository contains PDF reports for each Microprocessor practical.  
+This repository contains PDF reports for each **Microprocessor (MPL)** practical implemented using **NASM (Netwide Assembler)** on x86 architecture.  
 Each PDF is a self-contained experiment record that includes:
 
-- **Aim / Objective** — what the experiment does.  
-- **Apparatus / Tools** — simulators/assemblers used.  
-- **Algorithm / Flowchart** — logical steps to solve the problem.  
-- **Assembly Code** — complete source listing (8085 / 8086 as applicable).  
-- **Output / Result** — screenshots or sample outputs demonstrating the program behavior.  
-- **Observations / Conclusion** — short notes on behavior, edge cases, timings, etc.
+- **Aim / Objective** — purpose of the experiment.  
+- **Apparatus / Tools** — assembler/simulator setup used (NASM + DOSBox/EMU8086).  
+- **Algorithm / Flowchart** — stepwise logic and execution flow.  
+- **Assembly Code (NASM)** — complete, well-commented source listing.  
+- **Output / Result** — screenshots or terminal outputs showing the working result.  
+- **Observations / Conclusion** — remarks on instruction behavior, carry/overflow handling, and limitations.
 
-The PDFs are intentionally separated — one file per practical — so you can read, download, or reference a single experiment quickly.
+Each practical is provided in a **separate PDF file**, so you can view, download, or reference any experiment easily and individually.
 
 ---
 
@@ -38,67 +38,65 @@ Microprocessor-Lab/
 ├── 10_Multiplication_8bit.pdf
 └── README.md
 
-
 ---
 
 ## 📚 Table of Practicals
 
 | Sr | Title | Short description (what the PDF contains) |
 |:--:|:--|:--|
-| 1 | Input and Display of 64-bit Hexadecimal Numbers | Program, algorithm, and output showing how to input & display 64-bit hex values. |
-| 2 | String Length Determination | Code to compute length of a string in assembly; sample input/output and edge cases. |
-| 3 | Finding the Largest Among Byte/Word/Dword/64-bit Numbers | Programs for different data sizes with test outputs and explanation. |
-| 4 | Arithmetic Operations on 64-bit Hexadecimal Numbers (Switch case & Macros) | Implementations using macros and switch-like logic; code + multiple test outputs. |
-| 5 | Counting Positive and Negative Numbers in an Array | Array traversal, counting logic, sample arrays and outputs. |
-| 6 | Conversion Between Hexadecimal and BCD with Choice Menu | Two-way conversion code, interactive menu screenshots, and examples. |
-| 7 | Switching from Real Mode to Protected Mode & Displaying System Registers | Steps to change modes, register dumps and explanatory notes. |
-| 8 | Non-Overlapped Block Transfer without String Instructions | Manual block transfer implementation and results. |
-| 9 | Overlapped Block Transfer using String Instructions | Using string instructions (REP MOVS etc.), behavior and output comparisons. |
-| 10 | Multiplication of Two 8-bit Hexadecimal Numbers (Successive Addition & Add-Add-Shift) | Two multiplication methods, timing/step comparisons and outputs. |
+| 1 | [Input and Display of 64-bit Hexadecimal Numbers](01_Input_Display_64bit.pdf) | Program, algorithm, and output showing input & display of 64-bit hex values using NASM. |
+| 2 | [String Length Determination](02_String_Length.pdf) | NASM program to calculate string length; shows data traversal and output with edge cases. |
+| 3 | [Finding the Largest Among Numbers (Byte/Word/Dword/64-bit)](03_Largest_Number.pdf) | Comparison and logic for multiple data sizes with sample test outputs. |
+| 4 | [Arithmetic Operations on 64-bit Hexadecimal Numbers](04_Arithmetic_Operations.pdf) | Implemented using macros/procedures in NASM; includes multiple test outputs. |
+| 5 | [Counting Positive and Negative Numbers in an Array](05_Positive_Negative_Count.pdf) | Array scanning with conditional checks and counters; results with screenshots. |
+| 6 | [Conversion Between Hexadecimal and BCD (Two-way)](06_Hex_BCD_Conversion.pdf) | Interactive NASM program for both conversions with choice menu and examples. |
+| 7 | [Switching from Real Mode to Protected Mode & Displaying Registers](07_Real_Protected_Mode.pdf) | Mode-switching concept explained with register dump outputs. |
+| 8 | [Non-Overlapped Block Transfer without String Instructions](08_NonOverlapped_Block_Transfer.pdf) | Manual data transfer routine and simulation output. |
+| 9 | [Overlapped Block Transfer using String Instructions](09_Overlapped_Block_Transfer.pdf) | Implementation using `MOVS`, `REP` etc. and behavior comparison. |
+| 10 | [Multiplication of Two 8-bit Numbers](10_Multiplication_8bit.pdf) | Both successive addition and add–add–shift methods demonstrated with outputs. |
 
-> Each table entry links to the corresponding PDF file in this repository. (Click the filename in the file list to open/view.)
+> Each practical title links to its corresponding PDF in this repository.  
+> (Click the filename in the repo list to view or download it directly.)
 
 ---
 
-## 🔍 Example: What you’ll find inside each PDF
+## 🔍 Example: Inside a Typical Practical
 
-**(Example contents for `01_Input_Display_64bit.pdf`)**
+*(Example: `01_Input_Display_64bit.pdf`)*
+
 1. **Title & Aim** — Input and display of 64-bit hexadecimal numbers.  
-2. **Tools** — 8086/8085 simulator, TASM/MASM, DOSBox (if applicable).  
-3. **Algorithm / Flowchart** — stepwise plan (how bytes are read/printed).  
-4. **Assembly Source** — complete commented source listing.  
-5. **Test Inputs** — sample hex values used for testing.  
-6. **Output Screenshots** — simulator console or memory dump showing the result.  
-7. **Observations** — remarks on carry, sign, formatting, limitations.  
+2. **Tools Used** — NASM assembler, DOSBox/EMU8086 for execution.  
+3. **Algorithm / Flowchart** — logical steps and register usage.  
+4. **Assembly Source Code** — full NASM listing with comments.  
+5. **Test Input** — sample hexadecimal values.  
+6. **Output Screenshot** — console or memory dump view.  
+7. **Observations / Conclusion** — notes on carry, overflow, or format handling.
 
-This same structure is followed for all PDFs so you can understand the objective, the exact code, and verify the output quickly.
-
----
-
-## ▶️ How to view / download
-
-- To view any practical in the browser: click the PDF filename in the repository file list.  
-- To download: open the PDF and click the download button (top-right in GitHub’s PDF viewer).
+Every practical follows this consistent structure for clarity and quick understanding.
 
 ---
 
-## 🛠️ Tools & Recommended Setup (for reproducibility)
+## ▶️ How to View / Download
 
-- Intel 8085 / 8086 simulators (example: GNUSim8085, EMU8086)  
-- MASM / TASM (if code is MASM/TASM-specific)  
-- DOSBox (for older assembler environments)  
-- A screenshot tool to capture outputs (for future practicals)
+- **View:** Click the PDF filename in the repository to open it directly in your browser.  
+- **Download:** Open the file and click the download icon on GitHub’s PDF viewer.
+
+---
+
+## 🛠️ Tools & Recommended Setup (for NASM ALP)
+
+- **Assembler:** [NASM (Netwide Assembler)](https://www.nasm.us/)  
+- **Execution Environment:** DOSBox or Linux terminal  
+- **Optional Simulators:** EMU8086 / NASM-IDE  
+- **Additional Tools:**  
+  - `ndisasm` for disassembly and analysis  
+  - Screenshot utility for capturing outputs  
 
 ---
 
 ## 🤝 Contribution & Notes
 
-- If you want to add or correct a PDF, open an issue or create a pull request with the updated file.  
-- Naming convention for new practicals: `NN_Short_Title.pdf` where `NN` is the two-digit serial number.  
-- Keep the internal structure (Aim, Algorithm, Code, Output, Observations) for consistency.
+- For updates or corrections, open an issue or submit a pull request with the revised PDF.  
+- **Naming Convention:** `NN_Short_Title.pdf` (two-digit number for easy sorting).  
+- Keep internal structure consistent: *Aim → Algorithm → Code → Output → Observations.*  
 
----
-
-## 📜 License (suggestion)
-
-If you want others to reuse these notes/code, consider adding a LICENSE file (MIT is recommended for permissive reuse).
